@@ -1,0 +1,103 @@
+[
+
+{
+"id": 1, 
+"title": "Le Petit Prince", 
+"author": "Antoine de Saint-Exupéry", 
+"category": "Roman", 
+"year": 1943, 
+"available": true, 
+"cover": "/covers/petit-prince.jpg", 
+"summary": "Un aviateur échoué dans le désert rencontre un petit prince." 
+},
+
+{
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Roman",
+    "year": 1949,
+    "available": false
+  },
+  {
+    "id": 3,
+    "title": "Une brève histoire du temps",
+    "author": "Stephen Hawking",
+    "category": "Documentaire",
+    "year": 1988,
+    "available": true
+  },
+  {
+    "id": 4,
+    "title": "L'Étranger",
+    "author": "Albert Camus",
+    "category": "Roman",
+    "year": 1942,
+    "available": true
+  },
+  {
+    "id": 5,
+    "title": "Harry Potter à l'école des sorciers",
+    "author": "J.K. Rowling",
+    "category": "Jeunesse",
+    "year": 1997,
+    "available": false
+  },
+  {
+    "id": 6,
+    "title": "Sapiens : Une brève histoire de l'humanité",
+    "author": "Yuval Noah Harari",
+    "category": "Documentaire",
+    "year": 2011,
+    "available": true
+  },
+  {
+    "id": 7,
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "category": "Roman",
+    "year": 1862,
+    "available": true
+  },
+  {
+    "id": 8,
+    "title": "Le Seigneur des Anneaux",
+    "author": "J.R.R. Tolkien",
+    "category": "Roman",
+    "year": 1954,
+    "available": false
+  },
+  {
+    "id": 9,
+    "title": "Charlie et la Chocolaterie",
+    "author": "Roald Dahl",
+    "category": "Jeunesse",
+    "year": 1964,
+    "available": true
+  },
+  {
+    "id": 10,
+    "title": "Homo Deus : Une brève histoire de l'avenir",
+    "author": "Yuval Noah Harari",
+    "category": "Documentaire",
+    "year": 2016,
+    "available": true
+  },
+  {
+    "id": 11,
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "category": "Roman",
+    "year": 1857,
+    "available": true
+  },
+  {
+    "id": 12,
+    "title": "Le Monde de Narnia",
+    "author": "C.S. Lewis",
+    "category": "Jeunesse",
+    "year": 1950,
+    "available": false
+  }
+  
+]
