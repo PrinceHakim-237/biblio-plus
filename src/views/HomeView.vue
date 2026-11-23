@@ -4,6 +4,6 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
-    <TheWelcome />
+    <h1>Biblio+ : La bibliothèque municipale en ligne</h1>>
   </main>
 </template>
