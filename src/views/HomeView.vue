@@ -1,9 +1,35 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+<script setup> 
+import { ref, computed, onMounted } from 'vue' 
+import SearchBar from '@/components/SearchBar.vue' 
+import BookList from '@/components/BookList.vue' 
+  
+const books = ref([]) 
+const query = ref('') 
+const featured = computed(() => 
+  books.value 
+    .filter(b => b.title.toLowerCase().includes(query.value.toLowerCase())) 
+    .slice(0, 8)) 
+  
+onMounted(async () => { 
+  const res = await fetch(import.meta.env.BASE_URL + 'data/books.json') 
+  books.value = await res.json() 
+}) 
+</script> 
+  
+<template> 
+  <section class="hero"> 
+    <h1>Bienvenue à la bibliothèque</h1> 
+    <SearchBar v-model="query" /> 
+  </section> 
+  <section aria-labelledby="coeur"> 
+    <h2 id="coeur">Coups de cœur</h2> 
+    <BookList :books="featured" /> 
+  </section>
+  </template>
 
-<template>
-  <main>
-    <h1>Biblio+ : La bibliothèque municipale en ligne</h1>>
-  </main>
-</template>
+  <style scoped>
+.home-view { padding: var(--space-6); max-width: 1200px; margin: 0 auto; }
+.hero { text-align: center; margin-bottom: var(--space-6); }
+.hero h1 { margin-bottom: var(--space-4); }
+.featured-section h2 { margin-bottom: var(--space-4); border-bottom: 2px solid var(--color-primary); padding-bottom: var(--space-2); }
+</style>
